@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.springcloud</groupId>
+    <artifactId>spring-cloud-example</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>spring-cloud项目父工程</name>
+    <description>微服务技术盛行，越来越多的人选用spring-boot和spring-cloud</description>
+    <url>https://github.com/hmdobo/spring-cloud-example</url>
+
+    <developers>
+        <developer>
+            <name>HMDOBO</name>
+            <email>zcjswing@163.com</email>
+            <url>https://blog.csdn.net/weixin_37162010</url>
+            <timezone>GMT+8</timezone>
+        </developer>
+    </developers>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.1.RELEASE</version>
+        <relativePath /><!-- lookup parent from repository -->
+    </parent>
+
+    <properties>
+        <!-- common -->
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- dependency -->
+        <spring-boot.version>1.5.1.RELEASE</spring-boot.version>
+
+        <!-- plugin -->
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-parent</artifactId>
+                <version>Edgware.SR2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <modules>
+        <module>spring-cloud-eureka</module>
+        <module>spring-cloud-provider</module>
+        <module>spring-cloud-consumer</module>
+    </modules>
+
+</project>
