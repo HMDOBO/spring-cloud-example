@@ -8,4 +8,4 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8888/eureka}
+      defaultZone: ${EUREKA_URI:http://localhost:8888/eureka} # 注册中心服务地址

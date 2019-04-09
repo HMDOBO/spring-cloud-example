@@ -1,13 +1,13 @@
 spring:
   application:
-    name: spring-cloud-eureka-client
+    name: spring-cloud-eureka-client  # 服务名称，供服务调用端确定要调用哪个服务提供者
 
 server:
-  port: 0
+  port: 0 # 0表示让spring-boot随机指定端口号
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8888/eureka}
+      defaultZone: ${EUREKA_URI:http://localhost:8888/eureka} # 注册中心服务地址
   instance:
     preferIpAddress: true
