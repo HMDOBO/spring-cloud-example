@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-cloud-eureka-client-consumer-feign
+
+server:
+  port: 8082
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8888/eureka} # 注册中心服务地址

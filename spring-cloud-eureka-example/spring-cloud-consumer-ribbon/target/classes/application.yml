@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-cloud-eureka-client-consumer-ribbon
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8888/eureka} # 注册中心服务地址
