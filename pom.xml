@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <name>spring-cloud项目父工程</name>
-    <description>微服务技术盛行，越来越多的人选用spring-boot和spring-cloud</description>
+    <description>spring-boot和spring-cloud微服务构建工具example工程</description>
     <url>https://github.com/hmdobo/spring-cloud-example</url>
 
     <developers>
@@ -26,7 +26,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.1.RELEASE</version>
-        <relativePath /><!-- lookup parent from repository -->
+        <relativePath/><!-- lookup parent from repository -->
     </parent>
 
     <properties>
@@ -46,7 +46,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-parent</artifactId>
-                <version>Edgware.SR2</version>
+                <version>Dalston.SR5</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -55,6 +55,7 @@
 
     <modules>
         <module>spring-cloud-eureka-example</module>
+        <module>spring-cloud-config-example</module>
     </modules>
 
 </project>

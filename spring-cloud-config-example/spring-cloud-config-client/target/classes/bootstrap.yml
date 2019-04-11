@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: config-client # spring-cloud-config-client # 选择哪个配置文件
+  cloud:
+    config:
+      uri: http://localhost:2222/ # 配置中心服务端地址
+      profile: dev  # 环境
+      label: master # 分支名称
+
+server:
+  port: 0

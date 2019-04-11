@@ -15,6 +15,6 @@ Spring Cloud包含了多个子项目（针对分布式系统中涉及的多个�
 http://blog.didispace.com/spring-cloud-learning/
 
 ### 关于spring-cloud学习资料
-1. spring-boot中文文档https://docshome.gitbooks.io/springboot/content/（其实spring-boot官方文档写的就挺好）
-2. spring-cloud中文文档https://springcloud.cc/spring-cloud-dalston.html（个人觉得不好理解）
-3. http://blog.didispace.com/spring-cloud-learning/（推荐）
+1. spring-boot中文文档https://docshome.gitbooks.io/springboot/content/ （其实spring-boot官方文档写的就挺好）
+2. spring-cloud中文文档https://springcloud.cc/spring-cloud-dalston.html （个人觉得不好理解）
+3. http://blog.didispace.com/spring-cloud-learning/ （推荐）

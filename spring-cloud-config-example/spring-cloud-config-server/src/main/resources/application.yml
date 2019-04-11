@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/HMDOBO/spring-cloud-config-repository.git
+
+server:
+  port: 2222
+
+encrypt:
+  key: didispace
