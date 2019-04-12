@@ -1,3 +1,6 @@
+server:
+  port: 2222
+
 spring:
   application:
     name: spring-cloud-config-server
@@ -7,8 +10,12 @@ spring:
         git:
           uri: https://github.com/HMDOBO/spring-cloud-config-repository.git
 
-server:
-  port: 2222
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8888/eureka} # 注册中心服务地址
+  instance:
+    preferIpAddress: true
 
 encrypt:
   key: didispace
