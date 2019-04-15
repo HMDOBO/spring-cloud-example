@@ -7,13 +7,14 @@ spring:
   cloud:
     config:
       #      uri: http://localhost:2222 # 配置中心服务端地址
-      profile: dev  # 环境
+      profile: default  # 环境
       label: master # 分支名称
       #      name: config-client
       discovery:
-        enabled: true
-        service-id: spring-cloud-config-server
+        enabled: true # 启用从注册中心获取配置中心的服务
+        service-id: spring-cloud-config-server  # 配置中心的在eureka注册中心的名称，也是服务的名称
 
+# 配置到注册中心，对于spring-cloud-config配置中心，将其注册到eureka中，更能保证服务的高可用
 eureka:
   client:
     serviceUrl:

@@ -1,6 +1,7 @@
 server:
   port: 2222
 
+# spring-cloud-config 配置
 spring:
   application:
     name: spring-cloud-config-server
@@ -10,6 +11,7 @@ spring:
         git:
           uri: https://github.com/HMDOBO/spring-cloud-config-repository.git
 
+# 注册到eureka注册中心
 eureka:
   client:
     serviceUrl:
