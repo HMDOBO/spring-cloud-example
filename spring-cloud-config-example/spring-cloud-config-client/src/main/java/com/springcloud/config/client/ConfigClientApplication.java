@@ -19,10 +19,24 @@ public class ConfigClientApplication {
 
     @Value("${info.from}")
     String info;
+    @Value("${mysql.url}")
+    String url;
+    @Value("${mysql.username}")
+    String username;
+    @Value("${mysql.password}")
+    String password;
 
     @RequestMapping(value = "/info")
     public String info() {
         return info;
+    }
+
+    @GetMapping(value = "/mysqlinfo")
+    public String mysqlinfo() {
+        System.out.println("mysql.url=" + url);
+        System.out.println("mysql.username=" + username);
+        System.out.println("mysql.password=" + password);
+        return "mysql.url=" + url + ", mysql.username=" + username + ", mysql.password=" + password;
     }
 
 }

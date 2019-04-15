@@ -7,7 +7,7 @@ spring:
   cloud:
     config:
       #      uri: http://localhost:2222 # 配置中心服务端地址
-      profile: default  # 环境
+      profile: dev  # 环境
       label: master # 分支名称
       #      name: config-client
       discovery:
