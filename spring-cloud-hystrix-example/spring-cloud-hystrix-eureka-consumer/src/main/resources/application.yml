@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-cloud-eureka-client-consumer-ribbon
+    name: spring-cloud-eureka-client-consumer
 
 server:
   port: 0
