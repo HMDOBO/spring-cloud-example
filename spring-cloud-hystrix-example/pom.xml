@@ -5,6 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>spring-cloud-hystrix-eureka-consumer</module>
+        <module>spring-cloud-hystrix-dashboard</module>
+        <module>spring-cloud-hystrix-turbine</module>
     </modules>
 
     <parent>

@@ -42,7 +42,6 @@ public class HystrixEurekaConsumerApplication {
         return consumerService.consumer();
     }
 
-
     @Service
     class ConsumerService {
 

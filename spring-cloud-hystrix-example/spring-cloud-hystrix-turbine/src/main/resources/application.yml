@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-cloud-hystrix-trubine
+
+server:
+  port: 0
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8888/eureka} # 注册中心服务地址
+
+turbine:
+  app-config: spring-cloud-eureka-client-consumer # 需要收集监控的服务名
+#  cluster-name-expression: "default"
+  combine-host-port: true
