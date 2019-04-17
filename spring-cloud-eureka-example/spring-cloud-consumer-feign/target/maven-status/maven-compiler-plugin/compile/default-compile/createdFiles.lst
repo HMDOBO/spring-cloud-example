@@ -1,0 +1,2 @@
+com\springcloud\consumer\feign\EurekaClientConsumerFeignApplication.class
+com\springcloud\consumer\feign\service\DcClient.class

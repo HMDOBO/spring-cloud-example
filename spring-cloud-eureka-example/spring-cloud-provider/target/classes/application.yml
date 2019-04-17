@@ -8,6 +8,6 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8888/eureka} # 注册中心服务地址
+      defaultZone: ${EUREKA_URI:http://www.hmdobo.top:8888/eureka} # 注册中心服务地址
   instance:
     preferIpAddress: true

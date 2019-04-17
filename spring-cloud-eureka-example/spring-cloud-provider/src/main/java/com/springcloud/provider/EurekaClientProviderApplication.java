@@ -30,7 +30,7 @@ public class EurekaClientProviderApplication {
 
     @GetMapping("/dc")
     public String dc() throws Exception {
-        Thread.sleep(5000L);  // 测试服务降级代码
+//        Thread.sleep(5000L);  // 测试服务降级代码
         String services = "Services: " + discoveryClient.getServices();
         System.out.println(services);
         return services;

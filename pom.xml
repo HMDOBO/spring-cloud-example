@@ -41,6 +41,16 @@
         <!-- plugin -->
     </properties>
 
+    <build>
+        <finalName>${artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -57,6 +67,7 @@
         <module>spring-cloud-eureka-example</module>
         <module>spring-cloud-config-example</module>
         <module>spring-cloud-hystrix-example</module>
+        <module>spring-cloud-gateway-example</module>
     </modules>
 
 </project>
