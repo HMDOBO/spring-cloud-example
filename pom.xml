@@ -68,6 +68,7 @@
         <module>spring-cloud-config-example</module>
         <module>spring-cloud-hystrix-example</module>
         <module>spring-cloud-gateway-example</module>
+        <module>spring-cloud-sleuth-example</module>
     </modules>
 
 </project>

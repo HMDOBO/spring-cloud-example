@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-cloud-sleuth-trace-1
+
+server:
+  port: 0
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://39.106.177.210:8888/eureka} # 注册中心服务地址
